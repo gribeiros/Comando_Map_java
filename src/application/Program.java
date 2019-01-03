@@ -29,7 +29,7 @@ public class Program {
 				int soma = Integer.parseInt(arquivo[1]);
 				
 				if (votos.containsKey(nome)) {
-					int totalVotos = votos.get(nome);
+					int totalVotos = votos.get(nome);//Entra depois pegando o valor da chave(inteiro)
 					System.out.println("Valor de :"+totalVotos);
 					System.out.println();
 					votos.put(nome, soma + totalVotos);
@@ -37,7 +37,7 @@ public class Program {
 				} 
 				
 				else {
-					votos.put(nome, soma);
+					votos.put(nome, soma); //Entra aqui primeiro
 				}
 				linha = br.readLine();
 			}
